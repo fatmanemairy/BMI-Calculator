@@ -8,11 +8,6 @@ void main() {
   runApp(const mynewapp());
 }
 
-
-///gfdhff
-
-
-
 class mynewapp extends StatefulWidget {
   const mynewapp({Key? key}) : super(key: key);
 
@@ -26,7 +21,7 @@ class _mynewappState extends State<mynewapp> {
     return BlocProvider(
         create:(BuildContext context)=>AppCubit(),
 
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         home: FirstScreen(),
       ),
